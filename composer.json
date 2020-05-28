@@ -1,0 +1,38 @@
+{
+    "name": "dottd-io/nova-algolia",
+    "description": "A tool to create a quick Algolia Dashbord in your nova installation",
+    "keywords": [
+        "dottd",
+        "laravel",
+        "nova",
+        "algolia"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Connolly",
+            "email": "david@dottd.io"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "algolia/algoliasearch-client-php": "2.6.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dottd\\NovaAlgolia\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dottd\\NovaAlgolia\\ToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
